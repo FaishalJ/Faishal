@@ -1,0 +1,15 @@
+{
+  "name": "faishal-jaffar",
+  "version": "1.0.0",
+  "description": "portfolio website",
+  "main": "index.js",
+  "scripts": {
+    "sass-dev": "sass --watch assets/sass/main.scss assets/css/main.css"
+  },
+  "author": "Jaffar",
+  "license": "ISC",
+  "dependencies": {
+    "sass": "^1.77.0",
+    "typescript": "^5.4.5"
+  }
+}
