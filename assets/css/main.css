@@ -313,6 +313,18 @@ article.active {
 }
 
 /**
+ * #Resume
+ */
+.resume {
+  display: inline-flex;
+  align-items: center;
+  gap: 5px;
+}
+.resume:link, .resume:visited {
+  color: var(--eerie-black-1);
+}
+
+/**
  * #Skills / Clients
  */
 .clients {

@@ -18,6 +18,21 @@
 }
 
 /**
+ * #Resume
+ */
+
+.resume {
+  display: inline-flex;
+  align-items: center;
+  gap: 5px;
+
+  &:link,
+  &:visited {
+    color: var(--eerie-black-1);
+  }
+}
+
+/**
  * #Skills / Clients
  */
 
@@ -53,5 +68,5 @@
 }
 
 .clients-item img:hover {
-  filter: grayscale(.8);
+  filter: grayscale(0.8);
 }
