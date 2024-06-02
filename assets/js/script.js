@@ -10,6 +10,18 @@ var sidebarBtn = (document.querySelector("[data-sidebar-btn]"));
 sidebarBtn.addEventListener("click", function () {
     elementToggleFunc(sidebar);
 });
+// SKILLS CROLL ************************************
+/*const skillsList = <HTMLUListElement>document.querySelector(".clients-list");
+const skroll = document.querySelectorAll(
+  ".clients-item"
+) as NodeListOf<HTMLDListElement>;
+skillsList.addEventListener("wheel", (e) => {
+  e.preventDefault();
+  for (let i = 0; i < skroll.length; i++) {
+    skroll[i].scrollLeft += 300;
+    // console.log(skroll[i].scrollLeft +);
+  }
+});*/
 // custom select variables*************
 /*
 const select = <HTMLButtonElement>document.querySelector("[data-select]");

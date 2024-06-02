@@ -9,7 +9,6 @@
   "author": "Jaffar",
   "license": "ISC",
   "dependencies": {
-    "sass": "^1.77.0",
-    "typescript": "^5.4.5"
+    "sass": "^1.77.0"
   }
 }
