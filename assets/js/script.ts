@@ -1,16 +1,13 @@
 "use strict";
 
-// form button
-const formButton = <HTMLButtonElement>document.querySelector(".form-btn");
-// const form = <HTMLFormElement>document.querySelector(".form");
-
 // element toggle function
-const elementToggleFunc = function (elem: HTMLElement) {
+function elementToggleFunc(elem: HTMLElement) {
   elem.classList.toggle("active");
-};
+}
 
 // sidebar variables
-const sidebar = <HTMLElement>document.querySelector("[data-sidebar]");
+// const sidebar = <HTMLElement>document.querySelector("[data-sidebar]");
+const sidebar = document.querySelector<HTMLElement>("[data-sidebar]");
 const sidebarBtn = <HTMLButtonElement>(
   document.querySelector("[data-sidebar-btn]")
 );

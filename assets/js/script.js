@@ -1,14 +1,11 @@
 "use strict";
-// form button
-var formButton = document.querySelector(".form-btn");
-// const form = <HTMLFormElement>document.querySelector(".form");
 // element toggle function
-var elementToggleFunc = function (elem) {
+function elementToggleFunc(elem) {
   elem.classList.toggle("active");
-};
+}
 // sidebar variables
-var sidebar = document.querySelector("[data-sidebar]");
-var sidebarBtn = document.querySelector("[data-sidebar-btn]");
+const sidebar = document.querySelector("[data-sidebar]");
+const sidebarBtn = document.querySelector("[data-sidebar-btn]");
 // sidebar toggle functionality for mobile
 sidebarBtn.addEventListener("click", function () {
   elementToggleFunc(sidebar);
@@ -83,9 +80,12 @@ for (let i = 0; i < filterBtn.length; i++) {
 */
 // contact form variables ************************************
 var form = document.querySelector("[data-form]");
-form.addEventListener("submit", function (e) {
-  return e.preventDefault();
-});
+// const inputs = document.querySelectorAll("input, textarea");
+// form.addEventListener("submit", function (e) {
+//   return e.preventDefault();
+//   inputs.forEach((inpt) => (inpt.value = ""));
+// });
+
 var formInputs = document.querySelectorAll("[data-form-input]");
 var formBtn = document.querySelector("[data-form-btn]");
 // add event to all form input field
