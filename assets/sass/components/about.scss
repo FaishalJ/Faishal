@@ -25,10 +25,11 @@
   display: inline-flex;
   align-items: center;
   gap: 5px;
+  color: var(--orange-yellow-crayola);
 
   &:link,
   &:visited {
-    color: var(--eerie-black-1);
+    color: var(--orange-yellow-crayola);
   }
 }
 
@@ -43,16 +44,24 @@
 .clients-list {
   display: flex;
   justify-content: flex-start;
-  align-items: flex-start;
+  align-items: center;
   gap: 15px;
   margin: 0 -15px;
   padding: 25px;
   padding-bottom: 25px;
-  overflow-x: auto;
-  scroll-behavior: smooth;
-  overscroll-behavior-inline: contain;
-  scroll-snap-type: inline mandatory;
+  // overflow-x: auto;
+  // scroll-behavior: smooth;
+  // overscroll-behavior-inline: contain;
+  // scroll-snap-type: inline mandatory;
   scroll-padding-inline: 25px;
+
+  animation: scroll 10s linear infinite;
+}
+.anime-list {
+  overflow-x: hidden;
+}
+.anime-list:hover .clients-list {
+  animation-play-state: paused;
 }
 
 .clients-item {
@@ -69,4 +78,13 @@
 
 .clients-item img:hover {
   filter: grayscale(0.8);
+}
+
+@keyframes scroll {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-100%);
+  }
 }

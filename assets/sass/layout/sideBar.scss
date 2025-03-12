@@ -36,8 +36,7 @@
 
 .info-content .title {
   color: var(--white-1);
-  // background: var(--onyx);
-  background: var(--eerie-black-1);
+  background: var(--onyx);
   font-size: var(--fs-8);
   font-weight: var(--fw-300);
   width: max-content;
@@ -52,7 +51,7 @@
   border-radius: 0 15px;
   font-size: 13px;
   color: var(--orange-yellow-crayola);
-  // background: var(--border-gradient-onyx);
+  background: var(--border-gradient-onyx);
   padding: 10px;
   box-shadow: var(--shadow-2);
   transition: var(--transition-1);
@@ -64,8 +63,7 @@
   position: absolute;
   inset: 1px;
   border-radius: inherit;
-  // background: var(--bg-gradient-jet);
-  background: var(--eerie-black-1);
+  background: var(--bg-gradient-jet);
   transition: var(--transition-1);
   z-index: -1;
 }
@@ -114,8 +112,7 @@
 }
 
 .contact-title {
-  // color: var(--light-gray-70);
-  color: var(--white-2);
+  color: var(--light-gray-70);
   font-weight: bold;
   font-size: var(--fs-8);
   text-transform: uppercase;
@@ -141,13 +138,10 @@
 }
 
 .social-item .social-link {
-  // color: var(--light-gray-70);
-  color: var(--eerie-black-1);
+  color: var(--light-gray-70);
   font-size: 18px;
 }
 
-
 .social-item .social-link:hover {
-  // color: var(--light-gray);
-  color: var(--eerie-dark);
+  color: var(--light-gray);
 }
