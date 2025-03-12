@@ -1,14 +1,17 @@
 "use strict";
+// form button
+var formButton = document.querySelector(".form-btn");
+// const form = <HTMLFormElement>document.querySelector(".form");
 // element toggle function
 var elementToggleFunc = function (elem) {
-    elem.classList.toggle("active");
+  elem.classList.toggle("active");
 };
 // sidebar variables
 var sidebar = document.querySelector("[data-sidebar]");
-var sidebarBtn = (document.querySelector("[data-sidebar-btn]"));
+var sidebarBtn = document.querySelector("[data-sidebar-btn]");
 // sidebar toggle functionality for mobile
 sidebarBtn.addEventListener("click", function () {
-    elementToggleFunc(sidebar);
+  elementToggleFunc(sidebar);
 });
 // SKILLS CROLL ************************************
 /*const skillsList = <HTMLUListElement>document.querySelector(".clients-list");
@@ -80,36 +83,37 @@ for (let i = 0; i < filterBtn.length; i++) {
 */
 // contact form variables ************************************
 var form = document.querySelector("[data-form]");
+form.addEventListener("submit", function (e) {
+  return e.preventDefault();
+});
 var formInputs = document.querySelectorAll("[data-form-input]");
 var formBtn = document.querySelector("[data-form-btn]");
 // add event to all form input field
 for (var i = 0; i < formInputs.length; i++) {
-    formInputs[i].addEventListener("input", function () {
-        // check form validation
-        if (form.checkValidity()) {
-            formBtn.removeAttribute("disabled");
-        }
-        else {
-            formBtn.setAttribute("disabled", "");
-        }
-    });
+  formInputs[i].addEventListener("input", function () {
+    // check form validation
+    if (form.checkValidity()) {
+      formBtn.removeAttribute("disabled");
+    } else {
+      formBtn.setAttribute("disabled", "");
+    }
+  });
 }
 // page navigation variables
 var navigationLinks = document.querySelectorAll("[data-nav-link]");
 var pages = document.querySelectorAll("[data-page]");
 // add event to all nav link
 for (var i = 0; i < navigationLinks.length; i++) {
-    navigationLinks[i].addEventListener("click", function () {
-        for (var i_1 = 0; i_1 < pages.length; i_1++) {
-            if (this.innerHTML.toLowerCase() === pages[i_1].dataset.page) {
-                pages[i_1].classList.add("active");
-                navigationLinks[i_1].classList.add("active");
-                window.scrollTo(0, 0);
-            }
-            else {
-                pages[i_1].classList.remove("active");
-                navigationLinks[i_1].classList.remove("active");
-            }
-        }
-    });
+  navigationLinks[i].addEventListener("click", function () {
+    for (var i_1 = 0; i_1 < pages.length; i_1++) {
+      if (this.innerHTML.toLowerCase() === pages[i_1].dataset.page) {
+        pages[i_1].classList.add("active");
+        navigationLinks[i_1].classList.add("active");
+        window.scrollTo(0, 0);
+      } else {
+        pages[i_1].classList.remove("active");
+        navigationLinks[i_1].classList.remove("active");
+      }
+    }
+  });
 }

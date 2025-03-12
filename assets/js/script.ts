@@ -1,5 +1,9 @@
 "use strict";
 
+// form button
+const formButton = <HTMLButtonElement>document.querySelector(".form-btn");
+// const form = <HTMLFormElement>document.querySelector(".form");
+
 // element toggle function
 const elementToggleFunc = function (elem: HTMLElement) {
   elem.classList.toggle("active");
@@ -86,6 +90,8 @@ for (let i = 0; i < filterBtn.length; i++) {
 
 // contact form variables ************************************
 const form = <HTMLFormElement>document.querySelector("[data-form]");
+form.addEventListener("submit", (e) => e.preventDefault());
+
 const formInputs = document.querySelectorAll(
   "[data-form-input]"
 ) as NodeListOf<HTMLInputElement>;
